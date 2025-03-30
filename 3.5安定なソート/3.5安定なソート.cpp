@@ -80,6 +80,7 @@ bool is_stable(Data* in, int n_in, Data* out, int n_out)
     return true;
 }
 
+
 int main()
 {
     {
