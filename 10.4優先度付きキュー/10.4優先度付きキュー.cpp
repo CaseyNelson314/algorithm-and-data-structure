@@ -92,19 +92,19 @@ T read(std::istream& is)
 
 int main()
 {
-    //    std::istringstream iss{ R"(
-    //insert 8
-    //insert 2
-    //extract
-    //insert 10
-    //extract
-    //insert 11
-    //extract
-    //extract
-    //end
-    //)" };
+    std::istringstream iss{ R"(
+    insert 8
+    insert 2
+    extract
+    insert 10
+    extract
+    insert 11
+    extract
+    extract
+    end
+    )" };
 
-    auto& iss = std::cin;
+    //auto& iss = std::cin;
 
 
 
