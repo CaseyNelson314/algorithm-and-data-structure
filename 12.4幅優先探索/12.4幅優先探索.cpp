@@ -33,7 +33,6 @@ int main()
         for (int j = 0; j < nto; ++j)
         {
             int to = read<int>(iss) - 1;
-            a[from][to] = 1;
         }
     }
 
@@ -41,6 +40,17 @@ int main()
     std::vector<int> color(n);
     std::vector<int> d(n);
     std::queue<int> q;
+
+    auto bfs = [&](auto self, int curr)
+        {
+            auto col = a[curr];
+            for (int i = 0; i < n; ++i)
+            {
+                if (col[i] != VISITED)
+                    q.push(i);
+            }
+            //p285
+        };
 
     q.push(0);
 
